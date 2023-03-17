@@ -43,6 +43,7 @@ btnNodeSubmit.addEventListener('click', () => {
         displayMessage(message, 'client');
         displayWebsocketMsg = true;
         websocket.send(message);
+        inputNode.value = '';
     }   
 });
 
